@@ -32,6 +32,9 @@ return {
         lspconfig.dockerls.setup({
             capabilities = capabilities
         })
+        lspconfig.kotlin_language_server.setup({
+            capabilities = capabilities
+        })
         lspconfig.yamlls.setup({
             capabilities = capabilities
         })

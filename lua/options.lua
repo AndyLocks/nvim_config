@@ -21,7 +21,7 @@ vim.cmd("set mouse=a")
 vim.cmd("set ttyfast")
 vim.cmd("set so=30")
 vim.cmd("filetype plugin indent on")
--- vim.g.mapleader = " "
+vim.g.mapleader = " "
 
 --short cuts :D
 vim.keymap.set('n', '<C-b>', ':NERDTreeToggle<CR>')
@@ -36,3 +36,6 @@ vim.keymap.set('n', '<C-v>', '"+p')
 
 vim.keymap.set('n', '<C-s>', ':w')
 vim.keymap.set('n', '<C-q>', ':q')
+
+--git shortcuts
+vim.keymap.set('n', '<leader>gi', ':Gitsigns preview_hunk<CR>')
