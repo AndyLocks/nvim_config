@@ -22,17 +22,19 @@ vim.cmd("set ttyfast")
 vim.cmd("set so=30")
 vim.cmd("filetype plugin indent on")
 vim.g.mapleader = " "
-
+vim.clipboard = unnamedplus
 --short cuts :D
-vim.keymap.set('n', '<C-b>', ':NERDTreeToggle<CR>')
+vim.keymap.set('n', '<C-b>', ':Neotree filesystem reveal right<CR>')
+vim.keymap.set("n", "<leader>tf", ":Neotree buffers reveal float<CR>", {})
 
 vim.keymap.set('n', '<C-Z>', 'u')
 vim.keymap.set('n', '<C-Y>', '<C-R>')
 vim.keymap.set('i', '<C-Z>', '<C-O>u')
 vim.keymap.set('i', '<C-Y>', '<C-O><C-R>')
 
-vim.keymap.set('n', '<C-c>', '"+y')
+vim.keymap.set('v', '<C-c>', '"+y')
 vim.keymap.set('n', '<C-v>', '"+p')
+vim.keymap.set('i', '<C-v>', '<escape> "+p i')
 
 vim.keymap.set('n', '<C-s>', ':w')
 vim.keymap.set('n', '<C-q>', ':q')

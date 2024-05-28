@@ -2,12 +2,12 @@ return {
     "nvim-lualine/lualine.nvim",
     config = function()
     local colors = {
-        blue   = '#80a0ff',
+        blue   = '#87D7FF',
         cyan   = '#79dac8',
         black  = '#080808',
-        white  = '#c6c6c6',
+        white  = '#CAD3F5',
         red    = '#ff5189',
-        violet = '#d183e8',
+        violet = '#FFAFD7',
         grey   = '#303030',
     }
   
